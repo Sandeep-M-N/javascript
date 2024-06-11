@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-valbefore{
+            border: 2px solid green;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border-radius: 12px;
+    font-size: 24px;
+    box-shadow: 7px 20px 48px black;
+
+        }
+    </style>
+    <script src="./formvalbefore.js"></script>
+</head>
+<body>
+    <form class="form-valbefore">
+        <div>
+        <label for="">Enter your user id</label>
+        <input type="text" name="uid" id="uid" onblur="checkdata()" ><br>
+        <span id="uerror"></span><br>
+        <label for="">enter your password</label>
+        <input type="password" name="upass" id="upass" onblur="checkpass()"><br>
+        <span id="upassword"></span>
+        </div>
+</body>
+</html>
