@@ -1,0 +1,10 @@
+.form-val{
+    border: 2px solid green;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border-radius: 12px;
+    font-size: 24px;
+    box-shadow: 7px 20px 48px black;
+
+}

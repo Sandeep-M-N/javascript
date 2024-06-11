@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formVal.css">
+    <script src="./formval.js"></script>
+</head>
+<body>
+    <form class="form-val" name="myform" onsubmit="return checkall()" >
+        <div>
+        <label for="">Enter your first Name</label>
+        <input type="text" name="fname" id="fname" placeholder="enter your first name"><br>
+        <button type="submit">submit</button>
+        </div>
+
+        <div>
+            <label for="">Select Qulification</label> <br>
+            <input type="checkbox" name="edu" value="sslc">sslc
+            <input type="checkbox" name="edu" value="hsc">hsc
+            <input type="checkbox" name="edu" value="ug">ug
+            <input type="checkbox" name="edu" value="pg">pg
+            
+        </div>
+    </form>
+</body>
+</html>
