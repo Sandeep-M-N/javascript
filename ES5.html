@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let courses=["java","python","react","nodejs"];
+        //1 for each():
+        courses.forEach((val)=>{
+            document.write(val + " ")
+        });
+
+        // map()
+        let num=[1,2,3,4,5,6,7,8,9];
+        document.write(num,"<br>");
+        let ans=num.map((val)=>{
+            return val*2;
+        })
+        // filter
+        document.write(ans,"<br>");
+        let filter_out=num.filter((val)=>{
+            return val%2==0;
+        })
+        document.write(filter_out);
+    </script>
+</body>
+</html>

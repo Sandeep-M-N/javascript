@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+
+    <div id="d19"></div>
+    <div id="d20"></div>
+
+
+    <script>
+
+        let msg="welcome you all in changepond, you are all a changepond developer."
+
+        // use of inedexof
+        document.getElementById("d1").innerHTML=msg.indexOf("changepond");
+
+        // use of last index of
+        document.getElementById("d2").innerHTML=msg.lastIndexOf("all");
+         // use of search 
+         document.getElementById("d3").innerHTML=` search index is ${msg.search("in")}`;
+
+
+         // use of slice method
+
+         document.getElementById("d5").innerHTML=msg.slice(2,14);
+         document.getElementById("d6").innerHTML=msg.slice(-14,-5);
+
+         // use of split
+
+         document.getElementById("d7").innerHTML=msg.split(" ");
+
+         // use of replace 
+         document.getElementById("d8").innerHTML=msg.replace("changepond","zoho");
+    </script>
+</body>
+</html>

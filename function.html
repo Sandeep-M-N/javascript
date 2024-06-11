@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        //1 simple function
+        function greeting(){
+            return "good  morning";
+        }
+
+        document.write(greeting(),"<br>");
+        //2 parameterize function
+        function welcome(std1){
+            return `welcome you ${std1} in changepond`;
+        }
+        document.write(welcome("sandeep"));
+
+        let ans=()=>{
+            return 500+500;
+        }
+        document.write(ans(),"<br>");
+        let fullname=(fname,lname,mname="")=>{
+            return `${fname} ${mname} ${lname}`;
+        }
+        document.write(fullname("sandeep","rao"," M N"),"<br>");
+
+        let emplist=(...std)=>{
+            return std;
+        };
+        document.write(emplist("rsam","shyam","sundar","bhima"),"<br>");
+    </script>
+</body>
+</html>
