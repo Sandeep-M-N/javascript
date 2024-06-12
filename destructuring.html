@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let states=["tamil nadu","andhrapradesh","karnataka","uttar pradesh"];
+        // destructuring of array
+        const [tn,ap,kr,up]=states;
+        document.write(`${tn} ${ap} ${kr} ${up} <br>`);
+         
+        // destucturing an object
+        let emp={empid:101,empaname:"sandeep",empsalary:95000,empaddress:"chennai"};
+        const {empid,empname,empsalary,empaddress}=emp;
+        document.write(`${empid} ${empname} ${empsalary} ${empaddress} <br>`);
+    </script>
+</body>
+</html>

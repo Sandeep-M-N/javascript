@@ -10,7 +10,7 @@ function checkdata(){
         document.getElementById("uerror").style.color="red";
     }
     else{
-        document.getElementById("uerror").innerHTML=""
+        document.getElementById("uerror").innerHTML="";
     }
 }
 function checkpass(){
@@ -19,8 +19,12 @@ function checkpass(){
         document.getElementById("upassword").innerHTML="password is required";
         document.getElementById("upassword").style.color="red";
     }
-    else if(!user_pass.trim().match(`[a-zA-Z0-9!@#$%^&*]{6,16}$`)){
+    else if(!user_pass.trim().match(`^[a-zA-Z@!@#%&*()0-9]{8,20}$`)){
         document.getElementById("upassword").innerHTML="password is not valid";
         document.getElementById("upassword").style.color="red";
     }
+    else{
+         document.getElementById("upassword").innerHTML=""
+    }
+
 }
